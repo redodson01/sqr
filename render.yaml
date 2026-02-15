@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sqr
+    runtime: docker
+    envVars:
+      - key: SECRET_KEY_BASE
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 2
